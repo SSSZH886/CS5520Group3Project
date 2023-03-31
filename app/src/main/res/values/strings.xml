@@ -2,18 +2,5 @@
     <string name="app_name">CS5520Group3Project</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="edittext_firstname">Enter Your Firstname</string>
-    <string name="textview_firstname">"First Name: "</string>
-    <string name="textview_lastname">"Last Name: "</string>
-    <string name="edittext_lastname">Enter Your Lastname</string>
-    <string name="button_save">save</string>
-    <string name="textview_friend">Friend1</string>
-    <string name="button_chat">Chat</string>
-    <string name="edittext_message">Type Here</string>
-    <string name="button_send">Send</string>
-    <string name="textview_name">"Name: "</string>
-    <string name="textview_email">"Email: "</string>
-    <string name="textview_hobby">"Hobby: "</string>
-    <string name="button_back">Back</string>
-    <string name="edittext_hobby">Enter Your Hobby</string>
+
 </resources>
