@@ -7,6 +7,33 @@
         tools:context=".RegisterFragment" >
 
         <EditText
+            android:id="@+id/editTextRegister_Hobby"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Hobby"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextRegister_Password"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextRegister_Password"
+            app:layout_constraintTop_toBottomOf="@+id/editTextRegister_Rep_Password2" />
+
+        <EditText
+            android:id="@+id/editTextRegister_Rep_Password2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Repeat Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextRegister_Password"
+            app:layout_constraintStart_toStartOf="@+id/editTextRegister_Password"
+            app:layout_constraintTop_toBottomOf="@+id/editTextRegister_Password" />
+
+        <EditText
             android:id="@+id/editTextRegister_Name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -47,31 +74,28 @@
             app:layout_constraintStart_toStartOf="@+id/editTextRegister_Email"
             app:layout_constraintTop_toBottomOf="@+id/editTextRegister_Email" />
 
-        <EditText
-            android:id="@+id/editTextRegister_Rep_Password"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:hint="Repeat Password"
-            android:inputType="textPassword"
-            android:minHeight="48dp"
-            app:layout_constraintEnd_toEndOf="@+id/editTextRegister_Password"
-            app:layout_constraintStart_toStartOf="@+id/editTextRegister_Password"
-            app:layout_constraintTop_toBottomOf="@+id/editTextRegister_Password" />
-
         <Button
             android:id="@+id/buttonRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="32dp"
             android:backgroundTint="#FF6F00"
             android:text="Register"
             android:textAllCaps="false"
             android:textColor="#263238"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/editTextRegister_Rep_Password"
-            app:layout_constraintStart_toStartOf="@+id/editTextRegister_Rep_Password"
-            app:layout_constraintTop_toBottomOf="@+id/editTextRegister_Rep_Password" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewRegister_profile" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/imageViewRegister_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextRegister_Hobby"
+            tools:src="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
